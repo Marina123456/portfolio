@@ -100,6 +100,7 @@ html, body{
 	background-size: cover;
     backgroun-repeat: no-repeat;
 	position:relative;
+	background:#E9E9E9;
 	height:180px;
 	width:180px;
 	border-radius:50%;
