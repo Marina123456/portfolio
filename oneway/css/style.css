@@ -43,7 +43,8 @@ body{
     -moz-filter: blur(15px);
 	-ms-filter:blur(15px);
     filter: blur(15px);
-	
+	filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='3');
+	filter: url('../images/blur.svg#blur'); /* путь к svg */
 	width:100%;
 	min-height:100%;
 	overflow:hidden; 
