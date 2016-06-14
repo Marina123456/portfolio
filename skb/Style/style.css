@@ -1,0 +1,170 @@
+@font-face{
+    font-family: 'wf_SegoeUILight';
+    src:url('http://i.s-microsoft.com/fonts/Segoe-UI/Cyrillic/Light/latest.eot');
+    src:url('http://i.s-microsoft.com/fonts/Segoe-UI/Cyrillic/Light/latest.eot?#iefix') format('embedded-opentype'),
+           url('http://i.s-microsoft.com/fonts/Segoe-UI/Cyrillic/Light/latest.woff') format('woff'),
+           url('http://i.s-microsoft.com/fonts/Segoe-UI/Cyrillic/Light/latest.ttf') format('truetype'),
+           url('http://i.s-microsoft.com/fonts/Segoe-UI/Cyrillic/Light/latest.svg#web') format('svg');
+    font-weight: normal;
+    font-style: normal;
+   }
+ html, body{height:100%;}
+ body {font-family: "wf_SegoeUILight";font: 14px 'Segoe UI';	color:#404040;line-height:20px; }
+:focus, :active {outline: none !important; }
+.container{ margin-left: 373px;  margin: 0 0px;}
+.allInfo{ top:0px; left:0px; width:100%; min-height: 100%;margin:0; padding:0;height:auto; position:relative;}
+body{margin:0; padding:0;}
+#controls{float:left;margin:0;overflow:hidden; position: absolute;left:0; right:0; top:0;  bottom:0;}
+#matrix_view{float:left;overflow:hidden;padding: 0px 45px 0px 0px; margin-left: 332px;}
+#controls{ height:auto; width: 332px;left: 0px;top: 0px;background-color:#bcbcbc;-webkit-user-select: none;-moz-user-select: none;
+           -ms-user-select: none;-o-user-select: none;user-select: none;}
+/**************************ссылки кнопки**************************/
+#controls a {cursor:pointer;}
+#controls a  span{ font-size: 17px;
+    font-weight: bold;}
+a{ border-radius: 1px; border: none; outline: none; padding: 3px 0px 0px 3px;height: 24px; 
+	position: absolute; background: transparent;
+	background-image: -moz-linear-gradient( 90deg, rgb(235,235,235) 0%, rgb(254,254,254) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(235,235,235) 0%, rgb(254,254,254) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(235,235,235) 0%, rgb(254,254,254) 100%);
+	-webkit-box-shadow: 0px 0px 1px 1px rgba(131, 131, 131, 0.5);
+	-moz-box-shadow:    0px 0px 1px 1px rgba(131, 131, 131, 0.5);
+	box-shadow:         0px 0px 1px 1px rgba(131, 131, 131, 0.5);}
+a:hover { 
+background-image: -moz-linear-gradient( 90deg, rgb(222,222,222) 0%, rgb(242,242,242) 100%);
+background-image: -webkit-linear-gradient( 90deg, rgb(222,222,222) 0%, rgb(242,242,242) 100%);
+background-image: -ms-linear-gradient( 90deg, rgb(222,222,222) 0%, rgb(242,242,242) 100%);
+}
+a:focus {-webkit-box-shadow: 0px 0px 0px 2px #5199db;-moz-box-shadow:  0px 0px 0px 2px #5199db;box-shadow: 0px 0px 0px 2px #5199db;}
+a:active { background-image: -moz-linear-gradient( 90deg, rgb(229,231,232) 0%, rgb(255,255,255) 100%);
+background-image: -webkit-linear-gradient( 90deg, rgb(229,231,232) 0%, rgb(255,255,255) 100%);
+background-image: -ms-linear-gradient( 90deg, rgb(229,231,232) 0%, rgb(255,255,255) 100%);
+box-shadow: inset 1px 1.732px 1px 0px rgba(0, 0, 0, 0.059);
+}
+#clear_matrix{ 
+    top: 129px;
+    left: 33px;    
+    width: 151px;       
+}
+#change_place{top:168px;left:33px;width:216px;}
+#operation_rows{position:absolute;top: 299px;left:33px;}
+#operation_cols{position:absolute;top: 336px;left:33px;}
+#bag_caption{position:absolute; top:411px; left:33px; color:#da0902;}
+.caption {position: absolute; left: 204px; top: 8px;	}
+.add {width:96px;}
+.delete {left:110px;    width:84px;}
+
+/******************************кнопка умножения***************************/
+#start_multy{ top: 34px; display: block; left: 33px;  color: #fff;  background: #48a51b;  border: solid 1px #43672c;
+  position: relative;  border-radius: 3px;  background-image: -moz-linear-gradient( 90deg, rgb(55,145,11) 0%, rgb(75,169,29) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(55,145,11) 0%, rgb(75,169,29) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(55,145,11) 0%, rgb(75,169,29) 100%);
+  padding: 10px 0px 0px 0px;text-align: center;
+  border-right:none; width: 180px; height: 30px;
+  cursor: pointer;  
+}
+#start_multy:before {
+	left: 106%; top: 75%;
+	border: solid transparent;
+	content: " ";height: 0;
+	width: 0;position: absolute;
+}
+#start_multy:before {
+background: #48a51b;
+   margin-top: -12%;
+    margin-left: -14%;
+    border: none;
+    border-right: solid 1px #43672c;
+    border-top: solid 1px #43672c;
+    width: 25px;
+    height: 22px;
+    transform: rotate(60deg) skewX(30deg);
+    border-radius: 4px;
+    background-image: -moz-linear-gradient( 135deg, rgb(55,145,11) 0%, rgb(75,169,29) 100%);
+    background-image: -webkit-linear-gradient( 135deg, rgb(55,145,11) 0%, rgb(75,169,29) 100%);
+    background-image: -ms-linear-gradient( 135deg, rgb(55,145,11) 0%, rgb(75,169,29) 100%);
+ }
+ 
+#start_multy:hover{
+ background-image: -moz-linear-gradient( 90deg, rgb(48,126,10) 0%, rgb(59,141,19) 100%);
+ background-image: -webkit-linear-gradient( 90deg, rgb(48,126,10) 0%, rgb(59,141,19) 100%);
+ background-image: -ms-linear-gradient( 90deg, rgb(48,126,10) 0%, rgb(59,141,19) 100%);
+}	
+#start_multy:hover:before{
+ background-image: -moz-linear-gradient( 135deg, rgb(48,126,10) 0%, rgb(59,141,19) 100%);
+ background-image: -webkit-linear-gradient( 135deg, rgb(48,126,10) 0%, rgb(59,141,19) 100%);
+ background-image: -ms-linear-gradient( 135deg, rgb(48,126,10) 0%, rgb(59,141,19) 100%);
+}
+#start_multy:active{
+background-image: -moz-linear-gradient( 90deg, rgb(33,119,11) 0%, rgb(61,147,38) 100%);
+background-image: -webkit-linear-gradient( 90deg, rgb(33,119,11) 0%, rgb(61,147,38) 100%);
+background-image: -ms-linear-gradient( 90deg, rgb(33,119,11) 0%, rgb(61,147,38) 100%);
+}
+#start_multy:active:before{
+background-image: -moz-linear-gradient( 135deg, rgb(33,119,11) 0%, rgb(61,147,38) 100%);
+background-image: -webkit-linear-gradient( 135deg, rgb(33,119,11) 0%, rgb(61,147,38) 100%);
+background-image: -ms-linear-gradient( 135deg, rgb(33,119,11) 0%, rgb(61,147,38) 100%);
+}
+#start_multy:focus{ border:solid 1px transparent; -webkit-box-shadow: 0px 0px 0px 2px #5199db;
+-moz-box-shadow:  0px 0px 0px 2px #5199db;box-shadow: 0px 0px 0px 2px #5199db;
+}
+#start_multy:focus:before{ border-right: solid 1px transparent; border-top: solid 1px transparent;
+-webkit-box-shadow: 2px -2px 0px 0px #5199db; -moz-box-shadow:2px -2px 0px 0px #5199db;box-shadow: 2px -2px 0px 0px #5199db; }
+
+/**************************радио кнопки**************************/
+.radioMatrix{position:absolute;top:265px;left:33px;}
+label[for="B"] {margin-left:20px;}
+input[type="radio"] {display:none;}
+input[type="radio"] + label {cursor: pointer; vertical-align: top;}
+input[type="radio"] + label:before {
+    content: "";display: inline-block;height: 16px;width: 16px; margin: 0 5px 0 0;
+    border-radius: 50%;	background-image: -moz-linear-gradient( 90deg, rgb(235,235,235) 0%, rgb(254,254,254) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(235,235,235) 0%, rgb(254,254,254) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(235,235,235) 0%, rgb(254,254,254) 100%);
+	border-radius: 50%;
+}
+input[type="radio"]:checked + label:before{
+  background-image: -moz-linear-gradient( 90deg, rgb(229,231,232) 0%, rgb(255,255,255) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(229,231,232) 0%, rgb(255,255,255) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(229,231,232) 0%, rgb(255,255,255) 100%);
+  background:rgb(64, 64, 64); box-shadow: inset 0px 0px 0px 4px rgb(229,231,232),inset 1px 1.732px 1px 0px rgba(0, 0, 0, 0.059);
+ }
+label:focus:before {box-shadow:0px 0px 0px 2px #5199db;}
+
+/**************************блоки**************************/
+#res_b, #left_matrix{ position:relative; float:left; margin-top:18px; margin-left:40px;}
+.clear {clear:both;display:block;overflow:hidden;visibility:hidden;height:0; width: 100%;}
+#left_matrix  table {float:left; }
+#down_matrix{margin-top:40px;}
+
+/*********************поля для ввода*************************/
+.matrix_colsInput{ 
+width:40px; height:40px; margin:5px 5px; padding: 18px 0px 5px 3px; 
+border:solid 1px #d9d9d9;
+border-top:solid 1px #b2b2b2;
+box-shadow: inset 0px 1px 0px 0px #f2f2f2;
+
+ }
+.matrix_colsInput::-webkit-input-placeholder {color:#dadada;} 
+.matrix_colsInput::-moz-placeholder {color:#dadada;}
+.matrix_colsInput:disabled::-webkit-input-placeholder {color:#c9c9c9;} 
+.matrix_colsInput:disabled::-moz-placeholder {color:#c9c9c9;}
+.matrix_colsInput:disabled{
+background:#f2f2f2;
+border:solid 1px #d9d9d9;
+box-shadow: none;
+}
+.matrix_colsInput:focus{
+border-radius: 1px;
+color:black;
+box-shadow:0px 0px 0px 2px #5199db;
+}
+.matrix_colsInput:hover  #controls {background-color: #5199db;}
+
+/****************************таблица-матрица****************/
+.all_Matrix {padding: 3px;
+box-shadow:  0px -24px 0 -8px white,inset 0px -24px 0 -8px white,0px 24px 0 -8px white,inset 0px 24px 0 -8px white,0px 0px 0px 2px #404040;}
+.all_Matrix tr td {width:50px; height:50px;}
+.all_Matrix tr {height:50px;}
+#down_matrix .obozn {position: relative;  margin-left: 45%; font-size: 25px;}
+#left_matrix .obozn {position: absolute; left: 22px; margin-left:100%; top: 45%; margin-top: 0%; font-size: 25px;}

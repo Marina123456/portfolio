@@ -1,0 +1,366 @@
+body{
+	font-family: Lato; font: 10pt 'Lato';
+}
+/*************************медиа-запросы******************************/
+@media screen and (max-width: 2000px){/*разрешение экрана монитора*/
+    .allInfo{ 
+		
+		left:15%;
+		right:15%;
+		width:70%;
+	}	
+	.numTrain{
+		font-size: 80%;
+	}
+	.search_div{
+		width: 53%;
+	}
+	.formBron{margin-left:3%;}
+	.infoTrain{padding-left: 4%;}
+	.nameTrain{
+		font-size:120%;
+		line-height: 1px;
+	}
+	.allTable tr td:ntn-child(1){width:36%;}
+	.allTable tr td:ntn-child(2){width:7%;}
+	.allTable tr td:ntn-child(3){width:13%;}
+	.allTable tr td:ntn-child(4){width:13%;}	
+	.allTable tr td:ntn-child(5){width:16%;}
+	.allTable tr td:ntn-child(6){width:12%;}
+	.cellmap{display:table-cell;}
+	.divMapTr{display:table-row;}
+	.divMapTrTwo{display:table-row;}
+	.divMap{
+		display:table;
+		width: 74.8%;
+		height: 52%;
+
+	}
+	.mapTrain{width: 100%;}
+	.mapAll{
+		width: 516px;
+		margin-top: 0;
+		float:left;	
+		height: 82px;	
+	}
+	.divMap{
+    position: relative;
+    margin-top: -14.1%;
+    font-size: 100%;
+    margin-left: 15.1%;
+    color: white;
+    border-collapse: separate;
+    border-spacing: 3px 4px;
+    cursor: pointer;
+    }
+}
+@media screen and (max-width: 850px) { /* разрешение планшета */
+    .allInfo {        
+		left:5%;
+		right:5%;
+		width:90%;
+    }
+	
+	.numTrain{
+		font-size: 75%;
+	}
+	.search_div{
+		width: 75%;
+	}	
+	.formBron{margin-left:1%;}
+	.infoTrain{padding-top:3%; padding-left:1%;}
+	.allTable tr td:ntn-child(1){width:44%;}
+	.allTable tr td:ntn-child(2){width:7%;}
+	.allTable tr td:ntn-child(3){width:11%;}
+	.allTable tr td:ntn-child(4){width:11%;}	
+	.allTable tr td:ntn-child(5){width:12%;}
+	.allTable tr td:ntn-child(6){width:12%;}
+	.nameTrain{
+		font-size:100%;
+		line-height: 1%;
+		
+	}
+	.mapAll{
+		display:block;
+		width: 50%;
+		margin-top: 0;
+		float: left;
+		height: 550px;
+	}
+	.divMap{
+			position: relative;
+			color: white;
+			display:block;
+			width: 27%;
+			height: 68%;
+			margin-top: 0;
+			margin-left:0;
+			bottom: 243px;
+			font-size: 100%;
+			left: 131px;
+	}
+	
+	.cellmap{
+			display:block;
+			margin-top: 11%;
+			width: 21px;
+			height: 15px;
+	}
+	.divMapTr{display:inline-block; }
+	.divMapTrTwo{display:inline-block;margin-left: -50px;}
+	.divMapTr div:nth-child(2n+1), .divMapTrTwo  div:nth-child(2n+1){margin-top: 28%!important;}
+	.mapTrain{
+		-moz-transform: rotate(90deg); 
+		-ms-transform: rotate(90deg);
+		-webkit-transform: rotate(90deg); 
+		-o-transform: rotate(90deg); 
+		transform: rotate(90deg);
+		height:100%;
+		/*margin-top:120%;
+		margin-left:-80%;*/
+		margin-top: 187px;
+		margin-left: -143px;
+		width: 514px;
+		height: 120px;
+		cursor: pointer;
+		position: relative;
+	}
+}
+.allInfo{ 
+	margin:0;
+	/*left:15%;
+	right:15%;
+	width:70%;*/
+	position:absolute;
+	min-height: 100%;
+	height:auto;
+	top:0px; 
+	padding:0;
+}
+.header{
+	position:relative;
+	min-width: 100%;
+	
+	height: 90px;
+}
+.logo{
+	width:16%;
+	height:41px;
+	float: left;
+	margin-top:25px;
+}
+.search_div{
+	margin-top: 30px;
+    margin-left: 20px;
+    /*width: 53%;*/
+    float: left;
+    height: 37px;
+   
+}
+.search_div input{
+	height: 100%;
+	padding-left:2%;
+	width:33%;
+	float:left;
+	border: 1px solid #cccccc;
+}
+input:focus { outline: none; }
+
+.buttonSearch{
+	background-color:#ff83d2;
+	color:white;
+	border:none!important;
+	border-radius:0 3px 3px 0;
+	cursor:pointer;
+}
+.buttonSearch:hover, .subBron:hover{
+	background-color:#991168;
+	transition: background-color 3s;
+}
+/****************************стиль таблицы******************************************************/
+.allTable{
+	width:100%;
+	height:100%;
+	font-size:80%;
+	border-collapse: collapse;
+}
+
+.allTable tr {
+	border-bottom: 1px solid #d8d8d8;
+}
+.allTable td {
+	/*border-bottom: 1px solid #d8d8d8;*/
+	padding-top:10px;
+	padding-bottom:10px;
+	padding-left: 7px;
+}
+
+
+.titleTable{
+	text-transform: uppercase;
+	cursor:pointer;
+	font-style:bold;
+	
+}
+.canSort{
+	color:#3679c7;
+	float: left;	
+}
+.imgSort{
+	/*background-image: url(../icons/down.svg);*/
+   
+    height: 12px;
+    width: 12px;
+    margin-top: 2%;
+    margin-left: 3%;
+    float: left;
+}
+/****************************строка таблицы с датой******************************************************/
+.dataTr {
+	color:#676767;
+	font-size: 130%;
+	cursor:pointer;
+}
+.dataTr  td{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.numTrain{float:left;}
+.infoTrain{float:left; word-break: break-all;}
+.nameTrain{
+
+	color:#3679c7;
+	cursor:pointer;	
+}
+.typeTrain{
+	font-size:80%;
+	margin-top: 4%;
+}
+.buyTicket{
+	color:#3679c7;
+	border: 1px solid #3679c7;
+	border-radius:2px;
+	min-height: 90%;
+    width: 100%;
+    padding-top: 8%;
+	padding-bottom: 8%;
+    text-align: center;
+	cursor:pointer;
+	
+}
+.buyTicket:hover{
+	background-color:#3679c7;
+	color: white;
+	transition: background-color 1s,color 1s;
+}
+/****************************выбранные билеты******************************************************/
+.selectPlace{
+	margin-left: 2%;    
+	width: 41%;
+	height:82px;
+	float:left;
+	margin-top: 1%;
+}
+.titleSelPlace {	font-size:130%;}
+.allSelPlace{font-size: 180%;}
+
+/****************************карта поезда******************************************************/
+.mapAll{
+	
+	margin-top: 0;
+	float:left;	
+   
+	
+}
+.mapTrain{
+			
+	cursor:pointer;
+	position: relative;	
+}
+
+/*.divMapTr div:nth-child(2n+1), .divMapTrTwo  div:nth-child(2n+1){border-left: 1.9px solid; -webkit-user-select: none;-moz-user-select: none;
+    -ms-user-select: none;-o-user-select: none;user-select: none;}*/
+.cellmap {text-align: center;}
+.divMapTrTwo{top: 20px;left:-0.5px;}
+.cellMapOpen{background:#7d777b;}
+.cellMapClose{background:#c2b8be;color:#d8cdd4;}
+.cellMapOpen:hover, .selectedPlace{	background:#1f91d0!important;}
+
+/****************************форма бронирования билета******************************************************/
+.inputInfo{   margin-top: 2%;}
+
+.inputInfo input{ 
+	height: 35px;
+	padding-left: 2%;
+}
+.emailInp{margin-left: 7%;}
+.notLeft{margin-left: 0;}
+.inputInfo{width: 100%;}
+.fioInp{	
+	width:100%;
+	height: 35px;
+	margin-top: 4%;
+}
+.chekInp{display:none;}
+.validFirst{
+	width:5%;
+    min-height: 41%;
+    font-size: 120%;
+    color: red;
+}
+.fioInp input{ width:20%; float:left;}
+.fioInp .validationMessage{ 
+	float:left;
+	width:20%;
+    min-height: 41%;
+    font-size: 120%;
+    color: red;
+}
+.fioInp .inputOtValidationMessage{
+		 width: 24.5%;
+		 
+}
+.pasportInfo{	
+	width:73%;
+	margin-top: 4%;
+}
+
+.pasportInfo input{width:26%; float:left;}
+.pasportInfo .validationMessage{
+    float:left; 
+	width:26%; 	
+    font-size: 120%;
+    color: red;
+	min-height: 2px;
+	
+}
+.subBron{
+	margin-top: 3%;
+	width:20%;
+	margin-left:0;
+	text-align:center;
+	background-color:#ff83d2;
+	color:white;
+	border:none!important;
+	border-radius:3px;
+	cursor:pointer;
+}
+.clearAll{clear:both;}
+.polInp{	
+    width: 11%;
+    text-align: center;
+    font-size: 163%;
+    line-height: 202%;
+    height: 100%;
+    margin-left: 85%;
+}
+.polInp label{
+	color:#3679c7;
+	cursor:pointer;
+	padding: 6% 10%;
+}
+.polInp input[type="radio"]:checked + label{
+	color:#ff83d2;
+	border-radius:2px;
+	border:1px solid;
+}

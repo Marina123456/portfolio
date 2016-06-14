@@ -1,0 +1,139 @@
+@media screen and (max-width: 2000px){/*разрешение экрана монитора*/
+	.discr{
+	width:90%;
+	float:left;
+	}
+	.all_title{
+	font-size:250%;
+}
+	.disc_name{	
+	font-size:120%;
+	}
+	.disc_p{
+	font-size:100%;
+	}
+}
+@media screen and (max-width: 1200px) {
+	.discr{
+	width:75%;
+	float:left;
+	}
+	.all_title{
+	font-size:190%;
+	}
+	
+}
+@media screen and (max-width: 750px){
+.disc_name{
+	position:relative;
+	margin-left:30%;
+	top:25%;
+	font-weight: bolder;
+}
+.disc_p{
+	margin-left:30%;
+	position:relative;
+	top:25%;
+}
+}
+
+@media screen and (max-width: 450px) {
+	.discr{
+	width:0%;
+	display:none;
+	}
+	.all_title{
+	font-size:190%;
+	}
+	.photo{
+		margin:auto 0;
+		margin-left:20%
+	}
+}
+@media screen and (max-width: 335px){
+.all_title{
+	font-size:150%;
+	}
+}
+html, body{
+	height:100%;
+	font-family: 'Didact Gothic', sans-serif;
+	font-size:14pt;
+}
+.all_info{
+	position:absolute;
+	margin:0 auto;
+	text-align:center;
+	top:0;
+	bottom:0;
+	left:0;
+	/*background:red;*/
+	height:100%;
+	width:100%;
+	
+}
+.all_title{
+	/*background:blue;*/
+	height:10%;
+	width:50%;
+	margin: 0 auto;
+	text-align:center;
+	border-bottom:solid 1px black;
+}
+.all_proects{
+	/*background:green;*/
+	margin:0 auto;
+	min-height:100%;
+	width:100%;
+}
+.proect{
+	/*background:green;*/
+	cursor:pointer;
+	position:relative;
+	height:30%;
+	width:90%;
+	margin: 2% auto;
+	text-align:center;
+}
+.photo{
+	cursor:pointer;
+	background-size: cover;
+    backgroun-repeat: no-repeat;
+	position:relative;
+	/*background:yellow;*/
+	height:100%;
+	width:180px;
+	border-radius:50%;
+	border:solid 1px grey;
+	top:0;
+	left:0;
+	float:left;
+	z-index:100;
+}
+.discr{
+	position:relative;
+	/*background:grey;*/
+	height:100%;
+	border-radius:4px;
+	border:solid 1px grey;
+	float:left;
+	margin-left:-90px;
+	z-index:20;
+}
+.discr:hover{
+	background:#E9E9E9;
+	-webkit-transition: background 2s;
+    -moz-transition: background 2s;
+    -o-transition: background 2s;
+}
+.disc_name{
+	cursor:pointer;
+	position:relative;
+	top:25%;
+	font-weight: bolder;
+}
+.disc_p{
+	position:relative;
+	top:25%;
+}
+

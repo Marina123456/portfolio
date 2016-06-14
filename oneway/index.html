@@ -1,0 +1,64 @@
+<html>
+	 <head>
+		 <script src="./js/scripts.js"></script>
+		 <script src="./js/jquery-1.4.4.min.js"></script>
+		 <script src="./js/slides.min.jquery.js"></script>
+		 <link rel="stylesheet"  type="text/css" href="./css/style.css"/>
+		 <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+		 <script>
+		$(function(){
+			$('#slides').slides({
+				preload: true,
+				preloadImage: 'img/loading.gif',
+				play: 5000,
+				pause: 2500,
+				hoverPause: true
+			});
+		});
+		
+	</script>
+		 
+	 </head>
+	 <body>
+		 <div class="AllInfo">
+			 <div class="container">
+			    <div class="fon"></div>
+			    <img class="childContainer" id="ava" src="./images/1.jpg">
+				<h3 class="childContainer" id="namePeople">Emilia Clark</h3>
+				<p class="childContainer" id="profession">актриса</p>
+				<div class="childContainer" id="placePeople"><div class="imgSVG" id="placeImg"></div> <span>Лондон, Великобритания</span></div>
+				<div class="childContainer" id="birthDayPeople">
+					<div class="imgSVG" id="birthDayImg"></div>
+						<span>26 октября 1989,</span> 
+						<span id="age">28 лет</span>
+						<br>
+						<span id="doBirthday">2 месяца 13 дней до ДР</span>
+					</div>
+				<div class="childContainer" id="opisanie">Британская актриса. Наиболее известна по роли Дейенерис Таргариен в телесериале «Игра престолов» и Сары Коннор в фильме «Терминатор: Генезис».</div>
+			 </div>
+			 <div class="detailInfo">
+				 <div id="slides">
+					 <div class="slides_container">
+						 <a href="#"><img src="./images/slide-1.jpg" width="470" height="270"></a>
+						 <a href="#"><img src="./images/slide-2.jpg" width="470" height="270"></a>
+						 <a href="#"><img src="./images/slide-3.jpg" width="470" height="270"></a>
+						 <a href="#"><img src="./images/slide-4.jpg" width="470" height="270"></a>
+						 <a href="#"><img src="./images/slide-5.jpg" width="470" height="270"></a>
+					 </div>
+					 <a href="#" class="prev"><img src="./images/left.svg" width="24px" height="36px" alt="Arrow Prev"></a>
+					 <a href="#" class="next"><img src="./images/right.svg" width="24px" height="36px" alt="Arrow Next"></a>
+				 </div>
+				 <div class="likeDiv"><div class="likeImg"></div><span id="counLike">0</span></div>
+				 <div class="detailOpisanie">
+				     Родилась в Лондоне, детство провела в Беркшире. 
+				     Отец работал звукорежиссёром в театре, мать занималась бизнесом. 
+					 Получила театральное образование в Лондонском драматическом центре (англ. Drama Centre London), который закончила в 2009 году.<br>
+                     
+				 </div>
+			 </div>
+		 </div>
+		 <style>
+			 border_color('ava');
+		 </style>
+	 </body>
+</html>

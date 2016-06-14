@@ -1,0 +1,77 @@
+<html>
+<head>
+<script src="./Scripts/Matrix.js"></script>
+<script src="./Scripts/jquery-1.7.1.min.js"></script>
+<script src="./Scripts/jquery-1.7.min.js"></script>
+<script type="text/javascript" src="http://scriptjava.net/source/scriptjava/scriptjava.js"></script>
+<link rel="stylesheet"  type="text/css" href="./Style/style.css"/>
+</head>
+<body>
+<div class="AllInfo">
+    <div id="controls" class="container">
+		<label tabindex="1" id="start_multy" onclick="multy_matrix();" >Умножить матрицы</label><br>
+		<a tabindex="2" id="clear_matrix" onclick="clear_all_table();" ><span>&#8630;</span> Очистить матрицы</a>
+		<a tabindex="3"  id="change_place" onclick="replace_matrix();"><span>&#8645;</span> Поменять местами матрицы</a>
+		
+		<div class="radioMatrix">
+		     <input  class="radioMatrixInp" type="radio" name="changeMatrix" value="A" id="A" checked />
+		     <label tabindex="4" for="A">Матрица А</label>
+		     <input class="radioMatrixInp" type="radio" name="changeMatrix" value="B" id="B" />
+		     <label tabindex="5" for="B">Матрица B</label>
+		</div>
+		
+		<div id="operation_rows">
+			<a tabindex="6" class="add" id="add_rows" onclick="if ($('input[name=changeMatrix]:checked').val()=='A') add_row('a_matrix','a');
+			                                                   if ($('input[name=changeMatrix]:checked').val()=='B') add_row('b_matrix','b');"
+			><span style=" font-stretch: ultra-expanded;">+</span> Добавить</a>
+			<a tabindex="7"  class="delete" id="delete_rows" onclick="if ($('input[name=changeMatrix]:checked').val()=='A') delete_row('a_matrix','a');
+			                                                   if ($('input[name=changeMatrix]:checked').val()=='B') delete_row('b_matrix','b');"
+			><span >-</span> Удалить</a>
+			<span class="caption">строку</span>
+		</div>
+		<div id="operation_cols">
+			<a tabindex="8"  class="add" id="add_cols" onclick="if ($('input[name=changeMatrix]:checked').val()=='A') add_col('a_matrix','a');
+			                                                   if ($('input[name=changeMatrix]:checked').val()=='B') add_col('b_matrix','b');">
+			<span> +</span> Добавить</a>
+			<a tabindex="9"  class="delete" id="delete_cols" onclick="if ($('input[name=changeMatrix]:checked').val()=='A') delete_col('a_matrix','a');
+			                                                   if ($('input[name=changeMatrix]:checked').val()=='B') delete_col('b_matrix','b');"
+			><span>-</span> Удалить</a>
+			<span class="caption">столбец</span>
+		</div>
+		<span id="bag_caption"></span>
+	</div>
+	<div id="matrix_view" class="container">
+		<div id="res_b">
+		    
+			<table id="res_matrix" class="all_Matrix">
+				<script>
+					create_matrix('res_matrix', 4, 3, 'c','read_only');
+				</script>
+			</table>
+			
+			<div id="down_matrix">
+			<table id="b_matrix" class="all_Matrix">
+				<script>
+					create_matrix('b_matrix', 2, 3, 'b','no_read_only');
+				</script>
+			</table>
+			<p class="obozn">B</p>
+			</div>
+			
+		</div>
+		<div id="left_matrix">
+		<table id="a_matrix" class="all_Matrix" >
+		
+		 <script>
+		     create_matrix('a_matrix', 4, 2, 'a','no_read_only');
+		  </script>
+		
+		</table>
+		<p class="obozn">A</p>
+		</div>
+		<div class="clear"></div>
+	</div>
+<div class="clear"></div>
+</div>
+</body>
+</html>
