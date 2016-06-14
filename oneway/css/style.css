@@ -31,7 +31,7 @@ body{
 	float:left;
 	overflow:hidden; 
 	position: absolute; top:0;  bottom:0;
-	height:auto; width: 65%;left: 0px;top: 0px;-webkit-user-select: none;-moz-user-select: none;
+	height:auto; width: 90%;left: 0px;top: 0px;-webkit-user-select: none;-moz-user-select: none;
     -ms-user-select: none;-o-user-select: none;user-select: none;
 	}
 .fon{
@@ -42,9 +42,8 @@ body{
 	-webkit-filter: blur(15px);
     -moz-filter: blur(15px);
 	-ms-filter:blur(15px);
-    filter: blur(15px);
-	filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='15');
-	filter: url('../images/blur.svg#blur'); /* путь к svg */
+    filter: blur(15px);	
+	filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='3');
 	width:100%;
 	min-height:100%;
 	overflow:hidden; 
