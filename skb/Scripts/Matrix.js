@@ -1,16 +1,16 @@
-function matrix_all_data(){
+п»їfunction matrix_all_data(){
 	if (exist_data("a_matrix"))
 	{
 		if (!exist_data("b_matrix"))
 		{
 			document.getElementById('controls').style.backgroundColor = '#f6c1c0';
-			document.getElementById('bag_caption').innerHTML='Не все матрицы заполнены!';
+			document.getElementById('bag_caption').innerHTML='РќРµ РІСЃРµ РјР°С‚СЂРёС†С‹ Р·Р°РїРѕР»РЅРµРЅС‹!';
 			return false;
 		}
         
     }else {
 		document.getElementById('controls').style.backgroundColor = '#f6c1c0';
-		document.getElementById('bag_caption').innerHTML='Не все матрицы заполнены!';
+		document.getElementById('bag_caption').innerHTML='РќРµ РІСЃРµ РјР°С‚СЂРёС†С‹ Р·Р°РїРѕР»РЅРµРЅС‹!';
 		return false;
 	}
 	return true;
@@ -45,8 +45,8 @@ function col_and_rows(){
 			return true;
 		} else {
 		        document.getElementById('controls').style.backgroundColor = '#f6c1c0';
-		        document.getElementById('bag_caption').innerHTML="Такие матрицы нельзя перемножить, так как количество столбцов матрицы "+obozn1.toUpperCase()+
-				                                                  " не равно количеству строк матрицы "+obozn2.toUpperCase()+"!";
+		        document.getElementById('bag_caption').innerHTML="РўР°РєРёРµ РјР°С‚СЂРёС†С‹ РЅРµР»СЊР·СЏ РїРµСЂРµРјРЅРѕР¶РёС‚СЊ, С‚Р°Рє РєР°Рє РєРѕР»РёС‡РµСЃС‚РІРѕ СЃС‚РѕР»Р±С†РѕРІ РјР°С‚СЂРёС†С‹ "+obozn1.toUpperCase()+
+				                                                  " РЅРµ СЂР°РІРЅРѕ РєРѕР»РёС‡РµСЃС‚РІСѓ СЃС‚СЂРѕРє РјР°С‚СЂРёС†С‹ "+obozn2.toUpperCase()+"!";
 		       return false;	
 		}
 	
@@ -63,13 +63,13 @@ var num_edit=parseInt(str_edit);
 		   if (isNaN(num_edit))
 		   {
 		    document.getElementById('controls').style.backgroundColor = '#f6c1c0';
-		    document.getElementById('bag_caption').innerHTML='Вы ввели не число!';	
+		    document.getElementById('bag_caption').innerHTML='Р’С‹ РІРІРµР»Рё РЅРµ С‡РёСЃР»Рѕ!';	
 			return true;
 	       } else {
 		           if (parseInt(str_edit)>10)
 			          {
 				       document.getElementById('controls').style.backgroundColor = '#f6c1c0';
-		               document.getElementById('bag_caption').innerHTML='Максимально допустимое число 10!';
+		               document.getElementById('bag_caption').innerHTML='РњР°РєСЃРёРјР°Р»СЊРЅРѕ РґРѕРїСѓСЃС‚РёРјРѕРµ С‡РёСЃР»Рѕ 10!';
 			           return true;
 					  }
 		             else {
@@ -282,12 +282,12 @@ function delete_row(id_table,obozn){
 	new_res();
 }
 function create_matrix(id_table, count_rows, count_cols, obozn,read_only){
-//создание массива
+//СЃРѕР·РґР°РЅРёРµ РјР°СЃСЃРёРІР°
 var oboznUp=obozn.toUpperCase()
 var matrix = new Array(count_rows);
 for(var i = 0; i < matrix.length; i++)
 	matrix[i] = new Array(count_cols);
-//создание разметки
+//СЃРѕР·РґР°РЅРёРµ СЂР°Р·РјРµС‚РєРё
 var table = document.getElementById(id_table);
 var elem = document.getElementById(id_table);
 table.innerHTML='';
